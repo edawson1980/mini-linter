@@ -34,3 +34,12 @@ betterWords.forEach(word => {
   }
 });
 console.log(`really: ${really}, very: ${very}, basically: ${basically}`);
+
+//find number of sentences in the story:
+let sentenceCount = 0;
+betterWords.forEach(word => {
+  if((word.slice(-1) === '.') || (word.slice(-1) === '!')){
+    sentenceCount += 1;
+  };
+});
+console.log(`There are ${sentenceCount} sentences in this story.`)
