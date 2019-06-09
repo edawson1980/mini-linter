@@ -3,3 +3,6 @@ let story = 'Last weekend, I took literally the most beautiful bike ride of my l
 let overusedWords = ['really', 'very', 'basically'];
 
 let unnecessaryWords = ['extremely', 'literally', 'actually' ];
+
+//break up string into an array of individual words
+let storyWords = story.split(" ");
