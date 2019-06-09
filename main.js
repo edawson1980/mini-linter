@@ -43,3 +43,6 @@ betterWords.forEach(word => {
   };
 });
 console.log(`There are ${sentenceCount} sentences in this story.`)
+
+let finalStory = betterWords.join(" ");
+console.log(finalStory);
