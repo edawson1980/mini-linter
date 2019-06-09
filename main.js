@@ -6,3 +6,4 @@ let unnecessaryWords = ['extremely', 'literally', 'actually' ];
 
 //break up string into an array of individual words
 let storyWords = story.split(" ");
+console.log(storyWords.length);
