@@ -15,3 +15,22 @@ let betterWords = storyWords.filter(word => {
  return !word === unnecessaryWords.includes(word);
 });
 console.log(betterWords);
+
+
+//find # of times an overused word appears in betterWords:
+let really = 0;
+let very = 0;
+let basically = 0;
+
+betterWords.forEach(word => {
+  if(word === 'really'){
+    really += 1;
+  }else if(word === 'very'){
+    very += 1;
+  }else if(word === 'basically'){
+    basically += 1;
+  }else{
+    return word;
+  }
+});
+console.log(`really: ${really}, very: ${very}, basically: ${basically}`);
