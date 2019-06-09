@@ -4,6 +4,14 @@ let overusedWords = ['really', 'very', 'basically'];
 
 let unnecessaryWords = ['extremely', 'literally', 'actually' ];
 
-//break up string into an array of individual words
+
+
+//break up string into an array of individual words:
 let storyWords = story.split(" ");
 console.log(storyWords.length);
+
+//create a new array that holds all the words minus the words in unnecessaryWords
+let betterWords = storyWords.filter(word => {
+ return !word === unnecessaryWords.includes(word);
+});
+console.log(betterWords);
